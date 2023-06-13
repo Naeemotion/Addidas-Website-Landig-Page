@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Addidas wesite Landig Page</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="#"> <img src="assets/logo.png" class="logo" alt="addidas"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>DAYS CANT START <br>WITHOUT <span>PERFECT SHOES</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cumque temporibus, blanditiis, reiciendis,
+          fugit quibusdam eveniet numquam deserunt cupiditate inventore veniam doloremque debitis ab iste voluptatem
+          illum? Ex velit nostrum atque. Dolore nulla et quis vero ex, repellat fugiat fugit quibusdam eveniet numquam
+          deserunt cupiditate inventore veniam doloremque debitis ab iste voluptatem
+          illum? Ex velit nostrum atque. Dolore nulla et quis vero exfugit quibusdam eveniet numquam deserunt cupiditate
+          inventore veniam doloremque debitis ab iste voluptatem
+          illum? Ex velit nostrum atque. Dolore nulla et quis vero ex cumque!</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="assets/img1.png" class="addidas">
+      </div>
+    </div>
+    <ul class="thum">
+      <li><img src="assets/img1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#462c64')"></li>
+      <li><img src="assets/img2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#2c266b')"></li>
+      <li><img src="assets/img3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#462c56')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="assets/fb.png"></a></li>
+      <li><a href="#"><img src="assets/insta.png"></a></li>
+      <li><a href="#"><img src="assets/twt.png"></a></li>
+    </ul>
+  </section>
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.querySelector('.addidas').src = anything;
+    }
+
+    function changeCircleColor(color) {
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</body>
+
+</html>
